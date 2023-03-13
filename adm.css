@@ -180,7 +180,7 @@ table {
 
 main.table {
     width: 82vw;
-    height: 90vh;
+    height: 85vh;
     background-color: #ffe0a3;
     border-radius: .8rem;
     overflow: hidden;
@@ -229,8 +229,9 @@ td img {
 table, th, td {
     border-collapse: collapse;
     padding: 1rem;
+    text-align: center;
     font-family: BillyMoney;
-    letter-spacing: .5px;
+    letter-spacing: .7px;
 }
 
 thead th {
