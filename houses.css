@@ -1,0 +1,321 @@
+/* font */
+@font-face {
+	font-family: BillyMoney;
+	src: url("fonts/BillyMoney-Regular.ttf");
+}
+
+@font-face {
+	font-family: Rumble;
+	src: url(fonts/Rumble\ Brave.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {	
+	background-color: #f2f2f2;
+}
+
+/* scrollbar (tidak berlaku pada web firefox)*/
+html::-webkit-scrollbar {
+    width: 0.9vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #372e29;
+    border-radius: .5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #726255;
+}
+
+/* progress (seharusnya ada indikasi scroll progress
+tapi script js-nya tidak bisa*/
+#progress {
+    z-index: 1;
+    background-color: #bebebe;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #aaaaaa;
+    cursor: pointer;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #5d5d5d;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #bebebe;
+}
+
+/* navbar */
+nav {
+    background-color: #726255;
+    font-family: Rumble;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+nav .logo a {
+    color: white;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 55px;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    /* display: inline-block; */
+    background-color: #726255;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: large;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: #ffe0a3;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #372e29, 
+                0 0 5px #372e29;   
+} 
+
+nav ul ul li a:hover {
+    color: #ffe0a3;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .2s;
+}
+
+nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible; 
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid #372e29;
+    text-align: center;
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+/* main */
+/* gryffindor */
+
+.findor {
+    padding: 130px 7% 22px;
+    background-color: #ffdc80;
+}
+
+.findor h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 60px;
+    font-family: Rumble;
+    color: #372e29;
+    letter-spacing: 1.5px;
+}
+
+.findor .row-1 {
+    display: flex;
+}
+
+.findor .row-1 .gryf-img {
+    flex: 1 1 30rem;
+}
+
+.findor .row-1 .content-1 {
+    flex: 1 1 40rem;
+    padding: 0 1rem;
+}
+
+.findor .row-1 .content-1 h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Rumble;
+    color: #740001;
+    letter-spacing: 3px;
+}
+
+.findor .row-1 .content-1 p {
+    margin-bottom: 13px;
+    font-size: 20px;
+    font-family: BillyMoney;
+    line-height: 1.6;
+    color: #ae0001;
+}
+
+/* hufflepuff */
+
+.huffle {
+    padding: 65px 7% 22px;
+    width: 100%;
+    background-color: #726255;
+    height: 90vh;
+}
+
+.huffle .row-2 {
+    display: flex;
+}
+
+.huffle .row-2 .content-2 {
+    flex: 1 1 40rem;
+    padding: 0 1rem;
+}
+
+.huffle .row-2 .content-2 h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Rumble;
+    color: #f0c75e;
+    letter-spacing: 3px;
+}
+
+.huffle .row-2 .content-2 p {
+    margin-bottom: 13px;
+    font-size: 20px;
+    font-family: BillyMoney;
+    line-height: 1.6;
+    color: #ffe0a3;
+}
+
+.huffle .row-2 .huffle-img {
+    flex: 1 1 30rem;
+}
+
+/* ravenclaw */
+
+.raven {
+    padding: 65px 7% 22px;
+    width: 100%;
+    background-color: #bebebe;
+    height: 95vh;
+}
+
+.raven .row-3 {
+    display: flex;
+}
+
+.raven .row-3 .raven-img {
+    flex: 1 1 30rem;
+    padding: 0 1rem;
+}
+
+.raven .row-3 .content-3 {
+    flex: 1 1 40rem;
+    padding: 0 1rem;
+}
+
+.raven .row-3 .content-3 h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Rumble;
+    color: #222f5b;
+    letter-spacing: 3px;
+}
+
+.raven .row-3 .content-3 p {
+    margin-bottom: 13px;
+    font-size: 20px;
+    font-family: BillyMoney;
+    line-height: 1.6;
+    color: #0e1a40
+}
+
+/* slytherin */
+
+.rin {
+    padding: 75px 7% 22px;
+    width: 100%;
+    background-color: #1a472a;
+    height: 100vh;
+}
+
+.rin .row-4 {
+    display: flex;
+}
+
+.rin .row-4 .rin-img {
+    flex: 1 1 30rem;
+    padding: 0 1rem;
+}
+
+.rin .row-4 .content-4 {
+    flex: 1 1 40rem;
+    padding: 0 1rem;
+}
+
+.rin .row-4 .content-4 h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Rumble;
+    color: #5d5d5d;
+    letter-spacing: 3px;
+}
+
+.rin .row-4 .content-4 p {
+    margin-bottom: 13px;
+    font-size: 20px;
+    font-family: BillyMoney;
+    line-height: 1.6;
+    color: #aaaaaa
+}
+
+
+
+
+

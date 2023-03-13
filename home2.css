@@ -1,0 +1,334 @@
+/* font */
+@font-face {
+	font-family: BillyMoney;
+	src: url("fonts/BillyMoney-Regular.ttf");
+}
+
+@font-face {
+	font-family: Rumble;
+	src: url(fonts/Rumble\ Brave.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {	
+	background-color: #f2f2f2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* scrollbar (tidak berlaku pada web firefox)*/
+html::-webkit-scrollbar {
+    width: 0.9vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #372e29;
+    border-radius: .5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #726255;
+}
+
+/* progress (seharusnya ada indikasi scroll progress
+tapi script js-nya tidak bisa*/
+#progress {
+    z-index: 1;
+    background-color: #bebebe;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #aaaaaa;
+    cursor: pointer;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #5d5d5d;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #bebebe;
+}
+
+
+/* navbar */
+nav {
+    background-color: #726255;
+    font-family: Rumble;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+nav .logo a {
+    color: white;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 55px;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    /* display: inline-block; */
+    background-color: #726255;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: large;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: #ffe0a3;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #372e29, 
+                0 0 5px #372e29;   
+} 
+
+nav ul ul li a:hover {
+    color: #ffe0a3;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .2s;
+}
+
+nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible; 
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid #372e29;
+    text-align: center;
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+/* section page 1  */
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(pics/hgwrts2.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: Rumble;
+    letter-spacing: 3px;
+}
+
+h3 {
+    color: #ffe0a3;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-family: Rumble;
+    margin-bottom: 20px;
+}
+
+.socials a {
+    margin-right: 20px;
+}
+
+.socials img {
+    border-radius: 60px;
+}
+
+.video {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 20%;
+    background-color: #ffe0a3;
+    height: 80vh;
+    /* align-content: center; */
+}
+
+/* section about  */
+.about {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #726255;
+    height: 95vh;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+    padding-right: 40px;
+}
+
+.abouttext {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.abouttext h2 {
+    color: #ffe0a3;
+    font-size: 75px;
+    margin-bottom: 20px;
+    font-family: Rumble;
+}
+
+.abouttext h5 {
+    color: #ffe0a3;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: Rumble;
+}
+
+.abouttext p {
+    color: #372e29;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 55px;
+    font-family: BillyMoney;
+}
+
+/* affiliation section */
+.affiliation {
+    background-color: #f0c75e;
+    width: 100%;
+    padding: 30px 0px;
+    position: relative;
+}
+
+.title h2 {
+    color: #726255;
+    font-size: 70px;
+    width: 1130px;
+    margin: 15px auto;
+    text-align: center;
+    font-family: Rumble;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background-color: #ffe0a3;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /* font-family: BillyMoney;
+    letter-spacing: 1px; */
+}
+
+h5 {
+    color: #726255;
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-family: Rumble;
+}
+
+.desc p {
+    color: #372e29;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 25px;
+    font-family: BillyMoney;
+    letter-spacing: 1px;
+}
+
+.card .button {
+    background-color: #726255;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.card .button:hover {
+    color: #f0c75e;
+    box-shadow: none;
+}
+
+
+

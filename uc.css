@@ -1,0 +1,121 @@
+/* font */
+@font-face {
+	font-family: BillyMoney;
+	src: url("fonts/BillyMoney-Regular.ttf");
+}
+
+@font-face {
+	font-family: Rumble;
+	src: url(fonts/Rumble\ Brave.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {	
+	background-color: #f2f2f2;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navbar */
+nav {
+    background-color: #726255;
+    font-family: Rumble;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+nav .logo a {
+    color: white;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 55px;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    /* display: inline-block; */
+    background-color: #726255;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: large;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: #ffe0a3;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #372e29, 
+                0 0 5px #372e29;   
+} 
+
+nav ul ul li a:hover {
+    color: #ffe0a3;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .2s;
+}
+
+nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible; 
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid #372e29;
+    text-align: center;
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+.main {
+    padding: 130px 7% 22px;
+}
+
+
+
