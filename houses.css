@@ -9,6 +9,11 @@
 	src: url(fonts/Rumble\ Brave.otf);
 }
 
+@font-face {
+    font-family: Marxiana;
+    src: url(fonts/TT\ Marxiana\ Trial\ Grotesque.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -194,7 +199,7 @@ nav ul ul li a {
 .findor .row-1 .content-1 p {
     margin-bottom: 13px;
     font-size: 20px;
-    font-family: BillyMoney;
+    font-family: Marxiana;
     line-height: 1.6;
     color: #ae0001;
 }
@@ -228,7 +233,7 @@ nav ul ul li a {
 .huffle .row-2 .content-2 p {
     margin-bottom: 13px;
     font-size: 20px;
-    font-family: BillyMoney;
+    font-family: Marxiana;
     line-height: 1.6;
     color: #ffe0a3;
 }
@@ -271,7 +276,7 @@ nav ul ul li a {
 .raven .row-3 .content-3 p {
     margin-bottom: 13px;
     font-size: 20px;
-    font-family: BillyMoney;
+    font-family: Marxiana;
     line-height: 1.6;
     color: #0e1a40
 }
@@ -310,7 +315,7 @@ nav ul ul li a {
 .rin .row-4 .content-4 p {
     margin-bottom: 13px;
     font-size: 20px;
-    font-family: BillyMoney;
+    font-family: Marxiana;
     line-height: 1.6;
     color: #aaaaaa
 }

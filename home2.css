@@ -9,6 +9,11 @@
 	src: url(fonts/Rumble\ Brave.otf);
 }
 
+@font-face {
+    font-family: Marxiana;
+    src: url(fonts/TT\ Marxiana\ Trial\ Grotesque.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -257,7 +262,7 @@ h3 {
     line-height: 20px;
     font-size: 18px;
     margin-bottom: 55px;
-    font-family: BillyMoney;
+    font-family: Marxiana;
 }
 
 /* affiliation section */
@@ -310,8 +315,8 @@ h5 {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 25px;
-    font-family: BillyMoney;
-    letter-spacing: 1px;
+    font-family: Marxiana;
+    letter-spacing: .5px;
 }
 
 .card .button {

@@ -9,6 +9,11 @@
 	src: url(fonts/Rumble\ Brave.otf);
 }
 
+@font-face {
+    font-family: Marxiana;
+    src: url(fonts/TT\ Marxiana\ Trial\ Grotesque.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;

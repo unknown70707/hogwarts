@@ -9,6 +9,11 @@
 	src: url(fonts/Rumble\ Brave.otf);
 }
 
+@font-face {
+    font-family: Marxiana;
+    src: url(fonts/TT\ Marxiana\ Trial\ Grotesque.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -200,6 +205,7 @@ td img {
     background-color: #726255;
     padding: .8rem 1rem;
     font-family: Rumble;
+    color: white;
 }
 
 .table-body {
@@ -230,8 +236,8 @@ table, th, td {
     border-collapse: collapse;
     padding: 1rem;
     text-align: center;
-    font-family: BillyMoney;
-    letter-spacing: .7px;
+    font-family: Marxiana;
+    letter-spacing: .5px;
 }
 
 thead th {
@@ -243,3 +249,4 @@ thead th {
     background-color: #5d5d5d;
     color: #f2f2f2;
 }
+
