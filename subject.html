@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <title>Administrations | Hogwarts School of Witchcraft and Wizardry</title>
-    <link rel="stylesheet" href="subject.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -10,7 +10,6 @@
         <span id="progress-value">&#x1F815;</span>
     </div>
     <script src="script.js"></script>
-    <div class="page1">
     <nav>
         <div class="logo"><a href="home2.html">HOGWARTS</a></div>
         <ul>
@@ -27,49 +26,121 @@
             <li><a href="#">SUBJECTS</a></li>
         </ul>
     </nav>
-    </div>
-    <section class="video">
-         <div class="main-video"> 
-             <video class="subjects" loop autoplay muted>
-                <source src="vids/potionsclass.mp4" type="video/mp4">
-                <source src="vids/potionsclass.mp4" type="video/ogg">
-                Your browser does not support this spell.
-            </video>
+    <section class="bookmark">
+        <h2>All Subjects</h2>
+        <div class="list">
+        <ul>
+            <li><u><a href="#elec">Electives Classes</a></u></li>
+            <li><u><a href="#extra">Extra-curricular subjects</a></u></li>
+            <li><u><a href="#extra2">Extra-curricular activity</a></u></li>
+            <li><u><a href="#form">Registration</a></u></li>
+        </ul>
+        </div>
+        <div class="main-video"> 
+            <video class="subjects" loop autoplay muted>
+               <source src="vids/potionsclass.mp4" type="video/mp4">
+               <source src="vids/potionsclass.mp4" type="video/ogg">
+               Your browser does not support this spell.
+           </video>
+       </div>
+        <div id="core" class="core">
+        <h3 id="coreli">Core Classes</h3>
+            <dt>Astronomy</dt>
+            <dd>Teached by : Aurora Sinatra</dd>
+            <dt>Charms</dt>
+            <dd>Teached by : Filius Flitwick</dd>
+            <dt>Dark Arts</dt>
+            <dd>Teached by : Amycus Carrow</dd>
+            <dt>Defence Against the Dark Arts</dt>
+            <dd>Teached by : Severus Snape</dd>
+            <dt>Flying</dt>
+            <dd>Teached by : Rolanda Hooch</dd>
+            <dt>Herbology</dt>
+            <dd>Teached by : Neville Longbottom</dd>
+            <dt>History of Magic</dt>
+            <dd>Teached by : Jakub Groski</dd>
+            <dt>Potions</dt>
+            <dd>Teached by : Severus Snape</dd>
+            <dt>Transfiguration</dt>
+            <dd>Teached by : Minerva Mcgonagall</dd>
+        <h3 id="elec">Electives Classes</h3>
+            <dt>Arithmancy</dt>
+            <dd>Teached by : Septima Vector</dd>
+            <dt>Care of Magical Creatures</dt>
+            <dd>Teached by : Rubeus Hagrid</dd>
+            <dt>Divination</dt>
+            <dd>Teached by : Firenze</dd>
+            <dt>Muggle Studies</dt>
+            <dd>Teached by : Concordia Rowle</dd>
+            <dt>Study of Ancient Runes</dt>
+            <dd>Teached by : Elspeth Macgillony</dd>
+            <dt>Advanced Arithmancy Studies</dt>
+            <dd>Teached by : Unknown</dd>
+            <dt>Alchemy</dt>
+            <dd>Teached by : Unknown</dd>
+            <dt>Ancient Studies</dt>
+            <dd>Teached by : Unknown</dd>
+            <dt>Apparition</dt>
+            <dd>Teached by : Wilkie Twycross</dd>
+        </div>
+        <div class="extra">
+        <h3 id="extra">Extra-curricular Subjects</h3>
+        <ol>
+            <li>Art</li>
+            <li>Ghoul Studies</li>
+            <li>Magical Theory</li>
+            <li>Muggle Art</li>
+            <li>Muggle Music</li>
+            <li>Music</li>
+            <li>Xylomancy</li>
+        </ol>
+        <h3 id="extra2">Extra-curricular Activity</h3>
+        <ol>
+            <li>Art Club for Gryffindor</li>
+            <li>Astronomy Club</li>
+            <li>Charms Club</li>
+            <li>Duelling Club</li>
+            <li>Frog Choir</li>
+            <li>Hogwarts Ancient Runes Club</li>
+            <li>Hogwarts Gobstone Club</li>
+            <li>Hogwarts Orchestra</li>
+            <li>Potions Club</li>
+        </ol>
+        </div>
+        <div class="form" id="form">
+            <h4>Class Registration Form</h4>
+            <form method="post">
+                <div class="field">
+                    <input type="text" required>
+                    <label>Full Name</label>
+                </div>
+                <div class="field">
+                    <input type="text" required>
+                    <label>Student ID</label>
+                </div>
+                <div class="radio">
+                    <p>House :</p>
+                    <input type="radio" id="gryffindor" value="Gryffindor">
+                    <label for="gryffindor">Gryffindor</label>
+                    <input type="radio" id="hufflepuff" value="Hufflepuff">
+                    <label for="hufflepuff">Hufflepuff</label>
+                    <input type="radio" id="ravenclaw" value="Ravenclaw">
+                    <label for="ravenclaw">Ravenclaw</label>
+                    <input type="radio" id="slytherin" value="Slytherin">
+                    <label for="slytherin">Slytherin</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="first" value="first">
+                    <label for="first">First Year</label>
+                    <input type="checkbox" id="second" value="second">
+                    <label for="second">Second Year</label>
+                    <input type="checkbox" id="third" value="third">
+                    <label for="third">Third Year</label>
+                    <input type="checkbox" id="fourth" value="fourth">
+                    <label for="fourth">Fourth Year</label><br>
+                </div>
+                <input type="submit" value="login">
+            </form>
         </div>
     </section>
-    <!-- <section class="core-subjects">
-        <div class="row-1">
-            <div class="content-1">
-                <h2>Core Classes</h2>
-                <table>
-                    <tbody>
-                        <tr align="top">
-                            <td>
-                                <dl>
-                                    <dt>Astronomy</dt>
-                                    <dd>Aurora Sinitra</dd>
-                                    <dt>Charms</dt>
-                                    <dd>Filius Flitwick</dd>
-                                    <dt>Dark Arts</dt>
-                                    <dd>Amycus Carrow</dd>
-                                    <dt>Defence Against the Dark Arts</dt>
-                                    <dd>Severus Snape</dd>
-                                    <dt>Flying</dt>
-                                    <dd>Rolanda Hooch</dd>
-                                </dl>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <dl>
-                                    <dt>Flying</dt>
-                                    <dd></dd>
-                                </dl>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section> -->
-    </body>
+</body>
